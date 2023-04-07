@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://openlayers.org/favicon.ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using OpenLayers with Vite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="absolute top-2 left-2 px-5 py-5 bg-white rounded-xl border-2">
+      <h2 class="mb-2 font-bold">Menu</h2>
+      <div class="bg-gray-200 p-2 rounded-lg mb-2">
+        Drones: <span id="drone-count">0</span>
+      </div>
+      <button
+        class="py-2 px-3 bg-green-500 rounded-lg text-sm text-white"
+        id="drones"
+      >
+        Add A Drone
+      </button>
+      <button
+        class="py-2 px-3 bg-green-500 rounded-lg text-sm text-white"
+        id="add-drones"
+      >
+        Add Drones
+      </button>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
